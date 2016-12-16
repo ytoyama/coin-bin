@@ -3,7 +3,7 @@
 user=toyama.12056
 network=133.21.225.
 
-for host in $(seq 146 147)
+for host in 139 $(seq 145 147)
 do
   address=$network$host
   scp $HOME/.ssh/id_rsa.pub $user@$address:id_rsa.pub
